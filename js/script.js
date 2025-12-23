@@ -67,19 +67,19 @@ const container = document.getElementById("dogList");
 
 dog.forEach(dog => {
     const item = document.createElement("div");
-    item.classList.add("dog-card");
+    item.classList.add("card");
 
     item.innerHTML = `
-        <div class="dog-image">
+        <div class="card-image">
         <img src="${dog.image}" alt="${dog.name}">
         </div>
 
-        <div class="dog-content">
+        <div class="card-content">
         <h3>${dog.id} - ${dog.name}</h3>
-        <p class="dog-meta">
+        <p class="card-meta">
             Gene: ${dog.gene} &nbsp; • &nbsp; Age: ${dog.age} months
         </p>
-        <p class="dog-price">${dog.price} VND</p>
+        <p class="card-price">${dog.price} VND</p>
         </div>
     `;
 
@@ -138,6 +138,29 @@ const product = [{
     "image" : "assets/image/product/plush.png"
 }]
 
+const container_product = document.getElementById("productList");
+
+product.forEach(product => {
+    const item = document.createElement("div");
+    item.classList.add("card");
+
+    item.innerHTML = `
+        <div class="card-image">
+        <img src="${product.image}" alt="${product.name}">
+        </div>
+
+        <div class="card-content">
+        <h3>${product.name}</h3>
+        <p class="card-meta">
+            Product: ${product.product} &nbsp; • &nbsp; Size: ${product.size} months
+        </p>
+        <p class="card-price">${product.price} VND</p>
+        </div>
+    `;
+
+    container_product.appendChild(item);
+});
+
 const knowledge = [{
     "tittle" : "What is a Pomeranian? How to Identify Pomeranian Dogs",
     "image"  : "assets/image/knowledge/pomeranian.png",
@@ -153,3 +176,25 @@ const knowledge = [{
     "image" : "assets/image/knowledge/destroy.png",
     "article" : "Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog..."
 }]
+
+const container_knowledge = document.getElementById("knowledgeList");
+
+knowledge.forEach(knowledge => {
+    const item = document.createElement("div");
+    item.classList.add("card");
+
+    item.innerHTML = `
+        <div class="card-image">
+        <img src="${knowledge.image}" alt="${knowledge.name}">
+        </div>
+
+        <div class="card-content">
+        <h3>${knowledge.tittle}</h3>
+        <p class="card-article">
+            ${knowledge.article}
+        </p>
+        </div>
+    `;
+
+    container_knowledge.appendChild(item);
+});

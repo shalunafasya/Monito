@@ -51,7 +51,6 @@ body{
 }
 
 /* == HERO == */
-
 .hero {
     border-radius: 0 0 40px 40px;
     background: var(--Linear, linear-gradient(103deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%));
@@ -135,7 +134,6 @@ body{
   transform: rotate(9.355deg);
   z-index: 1;
   top : -50px;
-  
 }
 
 .hero__shape2{
@@ -163,25 +161,25 @@ body{
     padding: 0 70px 0 70px;
 }
 
-.pets__header {
+.header__section {
     display: flex;
     justify-content: space-between;
     padding: 24px;
 }
 
-.pets__title h3{
+.title h3{
     color: var(--Primary-Color-Dark-Blue);
     font-weight: 700;
     font-size: 24px;
 }
 
-.pets__container {
+.card__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-.dog-card {
+.card {
   background: white;
   border-radius: 16px;
   padding: 12px;
@@ -189,12 +187,12 @@ body{
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.dog-card:hover {
+.card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 32px rgba(0,0,0,0.12);
 }
 
-.dog-image {
+.card-image {
   width: 100%;
   height: 264px;
   border-radius: 12px;
@@ -202,27 +200,26 @@ body{
   margin-bottom: 12px;
 }
 
-.dog-image img {
+.card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-
-.dog-content h3 {
+.card-content h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 6px;
   color : var(--Neutral-Color-100);
 }
 
-.dog-meta {
+.card-meta {
   font-size: 12px;
   color: #667479;
   margin-bottom: 8px;
 }
 
-.dog-price {
+.card-price {
   font-size: 14px;
   font-weight: 700;
   color: var(--Neutral-Color-100);
@@ -232,9 +229,159 @@ body{
 .banner {
     margin:24px 70px 24px 70px ;
     border-radius: 20px;
-    padding: 0 70px 0 70px;
-    background-color: var(--Primary-Color-Dark-Blue);
+    overflow: hidden;
 }
+
+.banner__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px 0 70px;
+    position: relative;
+    background-color: var(--Primary-Color-Dark-Blue);    
+}
+
+.banner-shape{
+    position: absolute;
+    border-radius: 99px;
+    background:  #002A48;
+    width: 787.54px;
+    height: 787.54px;
+    transform: rotate(28.251deg);
+    z-index: 1;
+    top : 150px;
+    left : -200px;
+}
+
+.banner-shape2{
+    position: absolute;
+    border-radius: 99px;
+    background: var(--main-color);
+    width: 850px;
+    height: 635px;
+    transform: rotate(25.23deg);
+    top : -250px;
+    left : 650px;
+}
+
+.banner-image{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    top : 25px;
+    right : 50px;
+}
+
+.banner-content{
+    z-index: 2;
+    color: var(--Primary-Color-Dark-Blue);
+    padding: 50px 0 70px 0;
+    text-align: right;
+}
+
+.banner-content h1{
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.banner-content h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.banner-content p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product{
+  padding: 0 70px 0 70px;
+}
+
+.sellers{
+  padding: 0 70px 0 70px;
+}
+
+.seller_container{
+    display: flex;
+    padding: 0 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.seller_container img{
+    margin: 0 40px 0 40px;
+}
+
+.adopt{
+    margin:24px 70px 24px 70px ;
+    border-radius: 20px;
+    display: flex;
+    background-color: #FFB775;
+    overflow: hidden;
+}
+
+.adopt__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  position: relative; 
+}
+
+.adopt-shape{
+  position: absolute;
+  border-radius: 99px;
+  background: var(--main-color);
+  width: 782.292px;
+  height: 635px;
+  transform: rotate(25.23deg);
+  margin : -50px 0 0 0;
+  z-index : 0;
+  top: -10px;
+  right: 100px;
+}
+
+.adopt-content{
+  padding: 50px 0 70px 0;
+  color: var(--Primary-Color-Dark-Blue);
+  z-index: 2;
+}
+
+.adopt-shape2{
+  position: absolute;
+  background: var(--main-color);
+  width: 787.54px;
+  height: 787.54px;
+  transform: rotate(28.251deg);
+  border-radius: 99px;
+  opacity: 0.3;
+  left: 700px;
+  top : 150px;
+  z-index : 0;
+}
+
+.adopt-image{
+  position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.knowledge{
+    padding: 0 70px 0 70px;
+}
+
+
+
 
 
 
