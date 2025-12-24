@@ -154,7 +154,15 @@ product.forEach(product => {
         <p class="card-meta">
             Product: ${product.product} &nbsp; • &nbsp; Size: ${product.size} months
         </p>
-        <p class="card-price">${product.price} VND</p>
+        <p class="card-price2">${product.price} VND</p>
+        </div>
+
+        <div class="card-free">
+            <div class="card-icon">
+                <img src="assets/image/icons/gift.svg" alt="gift">
+
+                <p>&nbsp; • &nbsp; Free Toy & Free Shaker</p>
+            </div>
         </div>
     `;
 
