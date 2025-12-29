@@ -13,8 +13,17 @@
     <header>
         <nav class="navbar">
             <div class="container nav-wrapper">
+                 <button class="nav-toggle" id="navToggle">
+                    <img src="assets/image/icons/toggle.svg" alt="menu">
+                 </button>
+
                 <img src="assets/image/logo.svg" alt="logo" class="logo">
-                <div class="menu-wrapper">
+
+                <button class="nav-search">
+                    <img src="assets/image/icons/search.svg" alt="search">
+                </button>
+
+                <div class="menu-wrapper" id="menuWrapper">
                     <ul class="menu">
                         <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Category</a></li>
@@ -194,6 +203,18 @@ it will be love you back unconditionally.
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+    </script>
+
+    <script>
+  const toggleBtn = document.getElementById("navToggle");
+  const menu = document.getElementById("menuWrapper");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
+
 </body>
 </html>
